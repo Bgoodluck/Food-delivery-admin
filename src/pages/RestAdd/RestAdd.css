@@ -1,0 +1,96 @@
+.add {
+    width: 90%; 
+    margin: 20px auto; 
+    color: #6d6d6d;
+    font-size: 16px;
+    max-width: 1200px; 
+}
+
+.add form {
+    gap: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.add-img-upload img {
+    width: 100px; 
+    max-width: 100%; 
+}
+
+.add-product-name, .add-product-description {
+    width: 100%; 
+    max-width: 600px; 
+}
+
+.add-product-name input, .add-product-description textarea {
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.add-category-price {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.add-category-price select, .add-category-price input {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+    padding: 10px;
+}
+
+.add-btn {
+    width: 100%; 
+    max-width: 200px; 
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 20px auto; 
+}
+
+
+@media (min-width: 768px) {
+    .add {
+        width: 80%; 
+    }
+
+    .add-product-name, .add-product-description {
+        width: 100%;
+        max-width: 400px; 
+    }
+
+    .add-category-price {
+        gap: 20px;
+    }
+
+    .add-category-price select, .add-category-price input {
+        max-width: 100%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    .add {
+        width: 70%; 
+    }
+
+    .add-product-name, .add-product-description {
+        width: 50%; 
+        max-width: 300px; 
+    }
+
+    .add-category-price {
+        gap: 30px;
+    }
+
+    .add-category-price select, .add-category-price input {
+        max-width: 120px;
+    }
+
+    .add-btn {
+        max-width: 120px; 
+    }
+}
