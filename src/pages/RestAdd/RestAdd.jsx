@@ -10,6 +10,7 @@ function RestAdd({url}) {
 
     const [data, setData] = useState({
         name: "",
+        aka: "",
         menu: "Appertizer",
         address: "",
         operating_hours: "",
@@ -27,7 +28,7 @@ function RestAdd({url}) {
             const formData = new FormData();
             formData.append("name", data.name)
             formData.append("menu", data.menu)
-            // formData.append("address", Number(data.price))
+            formData.append("aka", data.aka)
             formData.append("address", data.address)
             formData.append("operating_hours", data.operating_hours)
             formData.append("operating_days", data.operating_days)
@@ -37,6 +38,7 @@ function RestAdd({url}) {
                 setData(
                     {
                         name: "",
+                        aka: "",
                         menu: "Appertizer",
                         address: "",
                         operating_hours: "",
@@ -68,6 +70,10 @@ function RestAdd({url}) {
         <div className="add-product-name flex-col">
             <p>Restaurant name</p>
             <input onChange={onChangeHandler} value={data.name}  type="text" name='name' placeholder='Type here' />
+        </div>        
+        <div className="add-product-name flex-col">
+            <p>Nickname</p>
+            <input onChange={onChangeHandler} value={data.aka}  type="text" name='aka' placeholder='Type here' />
         </div>        
         <div className="add-category-price">
             <div className="add-category flex-col">

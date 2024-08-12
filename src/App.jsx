@@ -12,6 +12,7 @@ import RestList from './pages/RestList/RestList'
 
 
 function App() {
+  // https://food-delivery-api-cyj9.onrender.com
 
   const url = "https://food-delivery-api-cyj9.onrender.com";
 
